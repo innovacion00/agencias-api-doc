@@ -6,6 +6,7 @@ import starlight from "@astrojs/starlight";
 export default defineConfig({
   integrations: [
     starlight({
+      defaultLocale: "es",
       favicon: "favicon.png",
       logo: {
         src: "./src/assets/geh_large_logo.png",
