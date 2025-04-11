@@ -8,10 +8,7 @@ export default defineConfig({
     starlight({
       defaultLocale: "es",
       favicon: "favicon.png",
-      logo: {
-        src: "./src/assets/geh_large_logo.png",
-      },
-      title: "API docs",
+      title: "Booking connect Api",
       social: [
         {
           icon: "github",
@@ -20,16 +17,14 @@ export default defineConfig({
         },
       ],
       sidebar: [
+        { label: "Home", link: "/" },
         {
-          label: "Disponibilidad",
-          items: [
-            // Each item here is one entry in the navigation menu.
-            { label: "Explicacion", slug: "guides/example" },
-          ],
+          label: "Autenticacion",
+          link: "autenticacion/",
         },
         {
-          label: "Reference",
-          autogenerate: { directory: "reference" },
+          label: "Disponibilidad",
+          link: "disponibilidad/",
         },
       ],
     }),
